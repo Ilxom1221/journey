@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        {% block title %}
+        {% endblock title %}
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% include 'components/_fonts.html' %}
+
+    {% include 'components/_style.html' %}
+
+</head>
+<body>
+
+<div id="colorlib-page">
+
+    {% include 'components/_navbar.html' %}
+    <!-- END COLORLIB-ASIDE -->
+
+    {% block main %}
+    <!-- END COLORLIB-MAIN -->
+    {% endblock main %}
+
+</div><!-- END COLORLIB-PAGE -->
+
+<!-- loader -->
+
+{% include 'components/_loader.html' %}
+
+
+{% include 'components/_scripts.html' %}
+
+
+</body>
+</html>
